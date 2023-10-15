@@ -26,8 +26,8 @@ public class Actividad2_5 {
         if ( porcentaje <= 20){
             System.out.println("Se Cancela el concierto");
         }else{
-            if (porcentaje <= 50){
-                System.out.println("Recaudacion por aforo menor al 50% es: "+ descuento * entrada);
+            if (porcentaje < 50){
+                System.out.println("Recaudacion por aforo menor al 50% es: "+ (precio - descuento) * entrada);
             }else{
                 System.out.println("Recaudacion total por aforo superior al 50% es :" + precio*entrada);
             }
